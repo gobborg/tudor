@@ -10,14 +10,18 @@
 <!---
 need to edit form actions
 --->
-<body onload="countChars()">
-
-<form action="tweet thread" method="post">
-	<label for="tweet">Tweet thread content:</label>
-	<textarea id="tweet" name="tweet_thread"></textarea>
-</form>
 <script src="td.js">
 </script>
+<body onload="countChars()">
+<div>Tweet content</div>
+<!---form action="tweet thread" method="post">
+	<label for="tweet">Tweet thread content:</label>
+	<textarea id="tweet" name="tweet_thread"></textarea>
+</form--->
+<textarea name="tweet" onkeyup="countChars(this);">
+</textarea>
+<p id="charNum">280 characters remaining</p>
+
 <br>
 
 <div class="button"> 
