@@ -1,2 +1,5 @@
+*.swp
+bundle.js
+bigbundle.js
 notes.md
 node_modules
