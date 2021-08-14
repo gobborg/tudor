@@ -6,34 +6,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <title>tweet thread drafter</title>
 <!---link rel="stylesheet" href="../../../archox-style.css"--->
-<!---script src="bigbundle.js"></script 
-//not sure if i need to call this in the head or not--->
 </head>
 <!---
 need to edit form actions
 --->
-<script "text/javascript" src="bigbundle.js">
-</script>
 <body onload="countChars()">
 <div>Tweet content</div>
+<textarea id="tweet" name="tweet" accept-charset="UTF-8" onkeyup="countChars();"></textarea>
+<p id="charNum">280 characters remaining</p>
+<br>
 <!---form action="tweet thread" method="post">
 	<label for="tweet">Tweet thread content:</label>
 	<textarea id="tweet" name="tweet_thread"></textarea>
 </form--->
-<textarea id="tweet" name="tweet" onkeyup="countChars();">
-</textarea>
-<p id="charNum">280 characters remaining</p>
-
-<br>
-
 <div class="button"> 
   <button type="submit">Post tweets</button>
 </div>
-</form>
 
-<!---body onload="startTime()"--->
-<center>
-<!---h2 id="txt"></h2--->
-</center>
+<script "text/javascript" src="bigbundle.js"></script>
 </body>
 </html>

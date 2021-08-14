@@ -1,4 +1,3 @@
-console.log('cup');
 var twitterText = require('twitter-text');
 
 global.countChars = function countChars(){
@@ -6,7 +5,6 @@ global.countChars = function countChars(){
     var thingOne = document.getElementById("tweet").value;
     var content = twitterText.parseTweet(thingOne);
     var maxLength = 280;
-    //var strLength = document.getElementById("tweet").value.length;   
     var strLength = content.weightedLength;
 
     if(strLength > maxLength){
