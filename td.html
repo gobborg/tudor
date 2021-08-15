@@ -12,17 +12,37 @@ need to edit form actions
 --->
 <body onload="countChars()">
 <div>Tweet content</div>
+
 <textarea id="tweet" name="tweet" accept-charset="UTF-8" onkeyup="countChars();"></textarea>
-<p id="charNum">280 characters remaining</p>
-<br>
+<p id="charNum">280 characters remaining</p><br>
+
+<!---my buttons DO add/rem <input type="text"> boxes
+but not "TEXTAREA" boxes--->
+<button class="add">new tweet field</button><br>
+<button class="remove">remove tweet field</button><br>
+
+<div id="thingTwo"><textarea id="newTweet" accept-charset="UTF-8" type="hidden" onkeyup="countChars();"></textarea></div>
+<p id="charNum">280 characters remaining</p><br>
+
+<input type="hidden" value="1" id="totalTweets">
+
 <!---form action="tweet thread" method="post">
 	<label for="tweet">Tweet thread content:</label>
 	<textarea id="tweet" name="tweet_thread"></textarea>
 </form--->
+
+<!---begin c/p'd code--->
+<input type="text">
+<button class="add">Add</button>
+<button class="remove">remove</button>
+<div id="new_chq"></div>
+<input type="hidden" value="1" id="total_chq">
+<!---end c/p'd code--->
+
 <div class="button"> 
   <button type="submit">Post tweets</button>
 </div>
 
-<script "text/javascript" src="bigbundle.js"></script>
+<script "text/javascript" src="bundle.js"></script>
 </body>
 </html>
