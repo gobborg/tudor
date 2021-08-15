@@ -17,8 +17,8 @@ global.countChars = function countChars(){
 
 add = function add() {
 
-	var newTweetNo = parseInt($("#total_tweet").val()) + 1;
-	var newTweet = '<textarea id="newTweet" accept-charset="UTF-8" type="hidden"' + newTweetNo + '>';
+	var newTweetNo = parseInt($("#totalTweets").val()) + 1;
+	var newTweet = '<textarea id="newTweet_'+ newTweetNo + '" accept-charset="UTF-8" type="hidden">';
 
 	$("#thingTwo").append(newTweet);
 	$("#totalTweets").val(newTweetNo);
@@ -29,7 +29,7 @@ remove = function remove() {
 	var lastTweetNo = $("#totalTweets").val();
 
 	if (lastTweetNo > 1) {
-		$("#new_" + lastTweetNo).remove();
+		$("#newTweet_" + lastTweetNo).remove();
 		$("#totalTweets").val(lastTweetNo - 1);
 	}
 }
