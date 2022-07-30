@@ -1,0 +1,25 @@
+{
+  "name": "tudor",
+  "version": "1.0.0",
+  "description": "Draft, save, and publish \"threads\" for Mastodon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gobborg/tudor.git"
+  },
+  "keywords": [
+    "mastodon"
+  ],
+  "author": "gobborg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gobborg/tudor/issues"
+  },
+  "homepage": "https://github.com/gobborg/tudor#readme",
+  "dependencies": {
+    "twitter-text-js": "github:gobborg/twitter-text-js"
+  }
+}
